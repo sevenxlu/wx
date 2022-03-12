@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess-cao</title>
+
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="./p.css">
+</head>
+
+<body>
+    <div class="big">
+        <div class="title">
+            <div>Happy birthday🎀</div>
+        </div>
+
+        <!-- 轮播图 -->
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./princess/1.jpg" alt="" class="tu1"></div>
+                <div class="swiper-slide"><img src="./princess/10.jpg" alt="" class="tu2"></div>
+                <div class="swiper-slide"><img src="./princess/8.jpg" alt="" class="tu3"></div>
+            </div>
+
+        </div>
+
+        <div class="sheng">
+            <div>
+                <div><img src="./princess/3.jpg" alt=""></div>
+                <span>happy</span>
+            </div>
+            <div>
+                <div><img src="./princess/5.jpg" alt=""></div>
+                <span>birthday</span>
+            </div>
+            <div>
+                <div><img src="./princess/7.jpg" alt=""></div>
+                <span>my</span>
+            </div>
+            <div>
+                <div><img src="./princess/13.jpg" alt=""></div>
+                <span>princess</span>
+            </div>
+        </div>
+
+        <div class="da">
+            <div><img src="./princess/22.jpg" alt=""></div>
+            <div id="da"><img src="./princess/23.jpg" alt=""></div>
+        </div>
+        <div class="daa">
+            <div><img src="./princess/6.jpg" alt=""></div>
+            <div><img src="./princess/12.jpg" alt=""></div>
+        </div>
+
+    </div>
+    <audio src="./李雪莱 - 生日快乐.mp3" class="yin" preload="auto"></audio>
+</body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true, // 循环模式选项
+            autoplay: true
+
+        })
+    } 
+</script>
+<script>
+   
+    var yin = document.getElementsByClassName('yin')[0];
+    da.addEventListener('click',function(){
+        console.log(111);
+        yin.play()
+    })
+</script>
+
+</html>
